@@ -3466,3 +3466,27 @@ DogChase
 [2024.08.18-18.42.59:102][ 13]LogViewport: Scene viewport resized to 1357x697, mode Windowed.
 [2024.08.18-18.42.59:149][ 15]LogViewport: Scene viewport resized to 1357x707, mode Windowed.
 [2024.08.18-18.42.59:192][ 16]LogViewport: Scene viewport resized to 1357x735, mode Windowed.
+[2024.08.18-18.43.10:318][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.08.18-18.43.10:341][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2024.08.18-18.43.11:771][149]LogSlate: Window 'Save Content' being destroyed
+[2024.08.18-18.43.11:779][149]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.08.18-18.43.11:856][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2024.08.18-18.43.11:878][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2024.08.18-18.43.11:898][149]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2024.08.18-18.43.11:901][149]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Cats/Map/ThirdPersonMap/C/K3/6NWE45NC9VBB48GH6TOKYO
+[2024.08.18-18.43.11:901][149]LogSavePackage: Moving '../../../../../Github_Repo/ProjectCats/Saved/6NWE45NC9VBB48GH6TOKYO14A8568546030274877BF69F987ED6F4.tmp' to '../../../../../Github_Repo/ProjectCats/Content/__ExternalActors__/Cats/Map/ThirdPersonMap/C/K3/6NWE45NC9VBB48GH6TOKYO.uasset'
+[2024.08.18-18.43.11:903][149]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Cats/Map/ThirdPersonMap/0/OD/3YI01SZXCZSEDHD8WXERT2
+[2024.08.18-18.43.11:903][149]LogSavePackage: Moving '../../../../../Github_Repo/ProjectCats/Saved/3YI01SZXCZSEDHD8WXERT279B06CBC4BE8D6B1B56CA3B86460E080.tmp' to '../../../../../Github_Repo/ProjectCats/Content/__ExternalActors__/Cats/Map/ThirdPersonMap/0/OD/3YI01SZXCZSEDHD8WXERT2.uasset'
+[2024.08.18-18.43.11:905][149]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Cats/Map/ThirdPersonMap/4/W3/ARGDN0QXJHZDN3YDMXO1H9
+[2024.08.18-18.43.11:905][149]LogSavePackage: Moving '../../../../../Github_Repo/ProjectCats/Saved/ARGDN0QXJHZDN3YDMXO1H994EBE2D74996B7C04FF09494B657F2C3.tmp' to '../../../../../Github_Repo/ProjectCats/Content/__ExternalActors__/Cats/Map/ThirdPersonMap/4/W3/ARGDN0QXJHZDN3YDMXO1H9.uasset'
+[2024.08.18-18.43.11:908][149]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Cats/Map/ThirdPersonMap/4/SQ/FJUAZ0E64IEGCEWKYTJGWL
+[2024.08.18-18.43.11:908][149]LogSavePackage: Moving '../../../../../Github_Repo/ProjectCats/Saved/FJUAZ0E64IEGCEWKYTJGWL8E64B3BC4347F1B7480BED91E53E194C.tmp' to '../../../../../Github_Repo/ProjectCats/Content/__ExternalActors__/Cats/Map/ThirdPersonMap/4/SQ/FJUAZ0E64IEGCEWKYTJGWL.uasset'
+[2024.08.18-18.43.11:911][149]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/Cats/Map/ThirdPersonMap/4/XH/B4OPR4WLPKP18714GGFQMR
+[2024.08.18-18.43.11:911][149]LogSavePackage: Moving '../../../../../Github_Repo/ProjectCats/Saved/B4OPR4WLPKP18714GGFQMRDAD7CA2C4BF90AC3A547E3940C6C734E.tmp' to '../../../../../Github_Repo/ProjectCats/Content/__ExternalActors__/Cats/Map/ThirdPersonMap/4/XH/B4OPR4WLPKP18714GGFQMR.uasset'
+[2024.08.18-18.43.11:954][149]LogFileHelpers: InternalPromptForCheckoutAndSave took 175 ms (total: 3.25 sec)
+[2024.08.18-18.43.11:960][149]AssetCheck: New page: Asset Save: multiple assets
+[2024.08.18-18.43.11:960][149]LogContentValidation: Display: Validating /Game/Cats/Blueprint/QuestDogChase.QuestDogChase_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DogChase_C_UAID_2CF05D21F81CB81302_1648006943
+[2024.08.18-18.43.11:960][149]LogContentValidation: Display: Validating /Game/Cats/Blueprint/FlowerPot.FlowerPot_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.FlowerPot_C_UAID_40B076A427A1BC1302_1667519673
+[2024.08.18-18.43.11:960][149]LogContentValidation: Display: Validating /Script/Engine.StaticMeshActor /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.StaticMeshActor_UAID_40B076A427A1BC1302_1594056670
+[2024.08.18-18.43.11:960][149]LogContentValidation: Display: Validating /Game/Cats/Blueprint/Jongleur.Jongleur_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.Jongleur_C_UAID_40B076A427A1121302_1948935732
+[2024.08.18-18.43.11:960][149]LogContentValidation: Display: Validating /Game/Cats/Blueprint/Jongleur.Jongleur_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.Jongleur_C_UAID_40B076A427A1BC1302_1435325647
