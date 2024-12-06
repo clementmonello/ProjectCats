@@ -2743,3 +2743,368 @@ UnknownFunction []
 [2024.12.06-16.20.01:562][953]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.12.06-16.20.01:621][953]LogUObjectHash: Compacting FUObjectHashTables data took   4.04ms
 [2024.12.06-16.20.01:698][954]LogPlayLevel: Display: Destroying online subsystem :Context_34
+[2024.12.06-16.24.21:081][412]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2024.12.06-16.24.21:084][412]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Cats/Map/StartingScreen' took 0.026
+[2024.12.06-16.24.21:085][412]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Cats/Widget/InGameUI] ([2] browsable assets)...
+[2024.12.06-16.24.21:087][412]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/Cats/Widget/InGameUI.InGameUI]
+[2024.12.06-16.24.21:087][412]OBJ SavePackage: Finished generating thumbnails for package [/Game/Cats/Widget/InGameUI]
+[2024.12.06-16.24.21:087][412]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/InGameUI" FILE="D:/Documents/Unreal Projects/ProjectCats/Saved/Autosaves/Game/Cats/Widget/InGameUI_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2024.12.06-16.24.21:123][412]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Cats/Widget/InGameUI_Auto3
+[2024.12.06-16.24.21:123][412]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/InGameUI_Auto3B2B8F1374968166152DAA1A999273115.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Saved/Autosaves/Game/Cats/Widget/InGameUI_Auto3.uasset'
+[2024.12.06-16.24.21:124][412]LogFileHelpers: Auto-saving content packages took 0.040
+[2024.12.06-16.26.17:376][ 64]BlueprintLog: New page: Compile InGameUI
+[2024.12.06-16.26.17:430][ 64]LogUObjectHash: Compacting FUObjectHashTables data took   1.59ms
+[2024.12.06-16.26.17:444][ 64]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.06-16.26.17:504][ 64]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/InGameUI" FILE="D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/InGameUI.uasset" SILENT=true
+[2024.12.06-16.26.17:526][ 64]LogSavePackage: Moving output files for package: /Game/Cats/Widget/InGameUI
+[2024.12.06-16.26.17:527][ 64]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/InGameUI74F72FF94E12DDA737C6A79467DED5EF.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/InGameUI.uasset'
+[2024.12.06-16.26.17:535][ 64]LogFileHelpers: InternalPromptForCheckoutAndSave took 90 ms (total: 2.33 sec)
+[2024.12.06-16.26.17:541][ 64]AssetCheck: New page: Asset Save: InGameUI
+[2024.12.06-16.26.17:541][ 64]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/InGameUI.InGameUI
+[2024.12.06-16.26.19:093][238]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.12.06-16.26.19:104][238]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.12.06-16.26.19:104][238]PIE: New page: PIE session: StartingScreen (6 déc. 2024 à 18:26:19)
+[2024.12.06-16.26.19:104][238]LogPlayLevel: Creating play world package: /Game/Cats/Map/UEDPIE_0_StartingScreen
+[2024.12.06-16.26.19:106][238]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002131s)
+[2024.12.06-16.26.19:106][238]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Cats/Map/StartingScreen.StartingScreen to /Game/Cats/Map/UEDPIE_0_StartingScreen.StartingScreen (0.002160s)
+[2024.12.06-16.26.19:106][238]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.06-16.26.19:106][238]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.12.06-16.26.19:106][238]LogAIModule: Creating AISystem for world StartingScreen
+[2024.12.06-16.26.19:107][238]LogPlayLevel: PIE: World Init took: (0.000704s)
+[2024.12.06-16.26.19:130][238]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2024.12.06-16.26.19:132][238]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2024.12.06-16.26.19:132][238]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.12.06-16.26.19:132][238]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.12.06-16.26.19:133][238]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.12.06-16.26.19:133][238]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.12.06-16.26.19:133][238]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.12.06-16.26.19:135][238]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.12.06-16.26.19:165][238]LogAudioMixer: Display: Using Audio Hardware Device Haut-parleurs (G510s Gaming Keyboard)
+[2024.12.06-16.26.19:165][238]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.12.06-16.26.19:165][238]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.12.06-16.26.19:165][238]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.12.06-16.26.19:166][238]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2024.12.06-16.26.19:166][238]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2024.12.06-16.26.19:167][238]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2024.12.06-16.26.19:167][238]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2024.12.06-16.26.19:167][238]LogInit: FAudioDevice initialized with ID 8.
+[2024.12.06-16.26.19:167][238]LogAudio: Display: Audio Device (ID: 8) registered with world 'StartingScreen'.
+[2024.12.06-16.26.19:167][238]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2024.12.06-16.26.19:170][238]LogLoad: Game class is 'StartingScreenGameMode_C'
+[2024.12.06-16.26.19:170][238]LogWorld: Bringing World /Game/Cats/Map/UEDPIE_0_StartingScreen.StartingScreen up for play (max tick rate 0) at 2024.12.06-17.26.19
+[2024.12.06-16.26.19:170][238]LogWorld: Bringing up level for play took: 0.000278
+[2024.12.06-16.26.19:172][238]LogOnline: OSS: Created online subsystem instance for: :Context_35
+[2024.12.06-16.26.19:173][238]LogBlueprintUserMessages: [StartingScreen_C_0] WARNING GAME DELETED
+[2024.12.06-16.26.19:173][238]LogBlueprintUserMessages: [StartingScreen_C_0] No Save found
+[2024.12.06-16.26.19:174][238]PIE: Server logged in
+[2024.12.06-16.26.19:174][238]PIE: Play in editor total start time 0,071 seconds.
+[2024.12.06-16.26.20:711][420]LogNet: Browse: /Game/Cats/Map/ThirdPersonMap
+[2024.12.06-16.26.20:711][420]LogLoad: LoadMap: /Game/Cats/Map/ThirdPersonMap
+[2024.12.06-16.26.20:711][420]LogWorld: BeginTearingDown for /Game/Cats/Map/UEDPIE_0_StartingScreen
+[2024.12.06-16.26.20:711][420]LogWorld: UWorld::CleanupWorld for StartingScreen, bSessionEnded=true, bCleanupResources=true
+[2024.12.06-16.26.20:711][420]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.26.20:767][420]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.12.06-16.26.20:769][420]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2024.12.06-16.26.20:780][420]LogAudio: Display: Audio Device (ID: 8) registered with world 'ThirdPersonMap'.
+[2024.12.06-16.26.20:781][420]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.06-16.26.20:781][420]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.12.06-16.26.20:781][420]LogAIModule: Creating AISystem for world ThirdPersonMap
+[2024.12.06-16.26.20:781][420]LogWorldPartition: ULevel::OnLevelLoaded(ThirdPersonMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, bIsValidLevelInstance=0, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.12.06-16.26.20:781][420]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.12.06-16.26.20:781][420]LogWorldPartition: UWorldPartition::Initialize(Asset=ThirdPersonMap, IsEditor=0, bPIEWorldTravel=1 IsGame=0, IsCooking=0)
+[2024.12.06-16.26.20:805][420]LogWorldPartition: Display: GenerateStreaming started...
+[2024.12.06-16.26.20:805][420]LogWorldPartition: Display: GetPartitionedActors started...
+[2024.12.06-16.26.20:805][420]LogWorldPartition: Display: GetPartitionedActors took 11 us (total: 133 us)
+[2024.12.06-16.26.21:011][420]LogWorldPartition: Display: GenerateStreaming took 205 ms (total: 7.13 sec)
+[2024.12.06-16.26.21:030][420]LogContentBundle: [ThirdPersonMap(Standalone)] Creating new contrainer.
+[2024.12.06-16.26.21:030][420]LogWorldPartition: Display: WorldPartition initialize took 248 ms (total: 7.63 sec)
+[2024.12.06-16.26.21:030][420]LogPlayLevel: PIE: World Init took: (0.249666s)
+[2024.12.06-16.26.21:030][420]LogLoad: Game class is 'MyGameMode_C'
+[2024.12.06-16.26.21:120][420]LogAIPerception: Warning: UAIPerceptionComponent::OnRegister: Perception Component is being registered with SumonedMouse_C_UAID_2CF05D21F81C332F02_1463177104, they are designed to work with AAIControllers!
+[2024.12.06-16.26.21:159][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:159][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:163][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:166][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:166][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:168][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:169][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:171][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:171][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:172][420]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.26.21:216][420]LogAIPerception: Warning: UAIPerceptionComponent::OnRegister: Perception Component is being registered with SumonedMouse_C_UAID_2CF05D21F81C332F02_1463177104, they are designed to work with AAIControllers!
+[2024.12.06-16.26.21:229][420]PIE: Warning: AttachTo: '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_40B076A427A1BC1302_1710030674.Spline' is not static  (in blueprint "MouseArea"), cannot attach '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_40B076A427A1BC1302_1710030674.SplineMesh' which is static to it. Aborting.
+[2024.12.06-16.26.21:236][420]PIE: Warning: AttachTo: '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_2CF05D21F81C801202_2069105051.Spline' is not static  (in blueprint "MouseArea"), cannot attach '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_2CF05D21F81C801202_2069105051.SplineMesh' which is static to it. Aborting.
+[2024.12.06-16.26.21:251][420]LogWorld: Bringing World /Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap up for play (max tick rate 0) at 2024.12.06-17.26.21
+[2024.12.06-16.26.21:260][420]LogWorld: Bringing up level for play took: 0.221051
+[2024.12.06-16.26.21:260][420]LogNavigation: Warning: Recreating dtNavMesh instance due mismatch in number of bytes required to store serialized maxTiles (200, 8 bits) vs calculated maxtiles (808, 10 bits)
+[2024.12.06-16.26.21:317][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:318][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:318][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:318][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:318][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:319][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:321][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:321][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:322][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:322][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:322][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:323][420]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.26.21:332][420]LogLoad: Took 0.621742 seconds to LoadMap(/Game/Cats/Map/ThirdPersonMap)
+[2024.12.06-16.26.21:489][420]LogScript: Warning: Script Msg: Cannot add duplicate item into ListView.
+[2024.12.06-16.26.21:489][420]LogScript: Warning: Script Msg called by: InGameUI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_6.InGameUI_C_0
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: ================================================
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: Total job queries 146, among them cache hits 110 (75.34%)
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: Tracking 36 distinct input hashes that result in 25 distinct outputs (69.44%)
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: RAM used: 751,34 KiB of 1,60 GiB budget. Usage: 0.04%
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: Shaders Compiled: 0
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: Jobs assigned 0, completed 0 (0.00%)
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 0.00 s
+[2024.12.06-16.26.21:532][421]LogShaderCompilers: Display: ================================================
+[2024.12.06-16.26.26:924][789]LogCharacterMovement: NPC_OldMan_C_UAID_40B076A427A1F11902_1596499319 is stuck and failed to move! Velocity: X=-60.53 Y=17.19 Z=0.00 Location: X=-35.74 Y=-3656.18 Z=190.15 Normal: X=0.36 Y=-0.89 Z=0.27 PenetrationDepth:5.842 Actor:Mouse_C_UAID_40B076A427A1BC1302_1735906675 Component:Capsule BoneName:None (0 other events since notify)
+[2024.12.06-16.26.31:131][145]LogBlueprintUserMessages: [MyGameMode_C_0] MORT MORT
+[2024.12.06-16.26.36:158][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.06-16.26.36:158][534]LogWorld: BeginTearingDown for /Game/Cats/Map/UEDPIE_0_ThirdPersonMap
+[2024.12.06-16.26.36:159][534]LogWorld: UWorld::CleanupWorld for ThirdPersonMap, bSessionEnded=true, bCleanupResources=true
+[2024.12.06-16.26.36:170][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.26.36:171][534]LogContentBundle: [ThirdPersonMap(Standalone)] Deleting container.
+[2024.12.06-16.26.36:174][534]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.12.06-16.26.36:181][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.26.36:204][534]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.12.06-16.26.36:210][534]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2024.12.06-16.26.36:210][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.12.06-16.26.36:212][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2024.12.06-16.26.36:215][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.06-16.26.36:276][534]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2024.12.06-16.26.36:351][535]LogPlayLevel: Display: Destroying online subsystem :Context_35
+[2024.12.06-16.26.54:371][616]BlueprintLog: New page: Compile InGameUI
+[2024.12.06-16.26.54:418][616]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2024.12.06-16.26.54:474][616]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.06-16.26.54:535][616]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/InGameUI" FILE="D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/InGameUI.uasset" SILENT=true
+[2024.12.06-16.26.54:558][616]LogSavePackage: Moving output files for package: /Game/Cats/Widget/InGameUI
+[2024.12.06-16.26.54:559][616]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/InGameUI441CBB8D4FC9B1518DC978B49F1E335F.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/InGameUI.uasset'
+[2024.12.06-16.26.54:566][616]LogFileHelpers: InternalPromptForCheckoutAndSave took 92 ms (total: 2.42 sec)
+[2024.12.06-16.26.54:580][616]AssetCheck: New page: Asset Save: InGameUI
+[2024.12.06-16.26.54:580][616]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/InGameUI.InGameUI
+[2024.12.06-16.28.11:580][753]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cats/GameMode/MyGameMode.MyGameMode
+[2024.12.06-16.28.11:581][753]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.06-16.28.11:581][753]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.12.06-16.28.25:901][385]BlueprintLog: New page: Compile MyGameMode
+[2024.12.06-16.28.25:953][385]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2024.12.06-16.28.25:982][385]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.06-16.28.26:051][385]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/GameMode/MyGameMode" FILE="D:/Documents/Unreal Projects/ProjectCats/Content/Cats/GameMode/MyGameMode.uasset" SILENT=true
+[2024.12.06-16.28.26:076][385]LogSavePackage: Moving output files for package: /Game/Cats/GameMode/MyGameMode
+[2024.12.06-16.28.26:077][385]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/MyGameMode2164353140D904004080FFA7111703ED.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Content/Cats/GameMode/MyGameMode.uasset'
+[2024.12.06-16.28.26:085][385]LogFileHelpers: InternalPromptForCheckoutAndSave took 102 ms (total: 2.53 sec)
+[2024.12.06-16.28.26:092][385]AssetCheck: New page: Asset Save: MyGameMode
+[2024.12.06-16.28.26:092][385]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cats/GameMode/MyGameMode.MyGameMode
+[2024.12.06-16.28.29:290][755]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.12.06-16.28.29:301][755]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.12.06-16.28.29:301][755]PIE: New page: PIE session: StartingScreen (6 déc. 2024 à 18:28:29)
+[2024.12.06-16.28.29:301][755]LogPlayLevel: Creating play world package: /Game/Cats/Map/UEDPIE_0_StartingScreen
+[2024.12.06-16.28.29:303][755]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002069s)
+[2024.12.06-16.28.29:303][755]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Cats/Map/StartingScreen.StartingScreen to /Game/Cats/Map/UEDPIE_0_StartingScreen.StartingScreen (0.002095s)
+[2024.12.06-16.28.29:303][755]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.06-16.28.29:303][755]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.12.06-16.28.29:304][755]LogAIModule: Creating AISystem for world StartingScreen
+[2024.12.06-16.28.29:304][755]LogPlayLevel: PIE: World Init took: (0.000771s)
+[2024.12.06-16.28.29:327][755]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2024.12.06-16.28.29:331][755]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Max Channels (voices):				  0
+[2024.12.06-16.28.29:331][755]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.12.06-16.28.29:331][755]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.12.06-16.28.29:331][755]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.12.06-16.28.29:331][755]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.12.06-16.28.29:331][755]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.12.06-16.28.29:333][755]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.12.06-16.28.29:362][755]LogAudioMixer: Display: Using Audio Hardware Device Haut-parleurs (G510s Gaming Keyboard)
+[2024.12.06-16.28.29:363][755]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.12.06-16.28.29:363][755]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.12.06-16.28.29:363][755]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.12.06-16.28.29:364][755]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.12.06-16.28.29:364][755]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.12.06-16.28.29:365][755]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.12.06-16.28.29:365][755]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.12.06-16.28.29:365][755]LogInit: FAudioDevice initialized with ID 9.
+[2024.12.06-16.28.29:365][755]LogAudio: Display: Audio Device (ID: 9) registered with world 'StartingScreen'.
+[2024.12.06-16.28.29:365][755]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.12.06-16.28.29:367][755]LogLoad: Game class is 'StartingScreenGameMode_C'
+[2024.12.06-16.28.29:368][755]LogWorld: Bringing World /Game/Cats/Map/UEDPIE_0_StartingScreen.StartingScreen up for play (max tick rate 0) at 2024.12.06-17.28.29
+[2024.12.06-16.28.29:368][755]LogWorld: Bringing up level for play took: 0.000270
+[2024.12.06-16.28.29:370][755]LogOnline: OSS: Created online subsystem instance for: :Context_37
+[2024.12.06-16.28.29:370][755]LogBlueprintUserMessages: [StartingScreen_C_0] WARNING GAME DELETED
+[2024.12.06-16.28.29:371][755]LogBlueprintUserMessages: [StartingScreen_C_0] No Save found
+[2024.12.06-16.28.29:372][755]PIE: Server logged in
+[2024.12.06-16.28.29:372][755]PIE: Play in editor total start time 0,072 seconds.
+[2024.12.06-16.28.30:791][923]LogNet: Browse: /Game/Cats/Map/ThirdPersonMap
+[2024.12.06-16.28.30:791][923]LogLoad: LoadMap: /Game/Cats/Map/ThirdPersonMap
+[2024.12.06-16.28.30:791][923]LogWorld: BeginTearingDown for /Game/Cats/Map/UEDPIE_0_StartingScreen
+[2024.12.06-16.28.30:791][923]LogWorld: UWorld::CleanupWorld for StartingScreen, bSessionEnded=true, bCleanupResources=true
+[2024.12.06-16.28.30:791][923]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.28.30:860][923]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.12.06-16.28.30:862][923]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2024.12.06-16.28.30:880][923]LogAudio: Display: Audio Device (ID: 9) registered with world 'ThirdPersonMap'.
+[2024.12.06-16.28.30:880][923]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.06-16.28.30:880][923]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.12.06-16.28.30:881][923]LogAIModule: Creating AISystem for world ThirdPersonMap
+[2024.12.06-16.28.30:881][923]LogWorldPartition: ULevel::OnLevelLoaded(ThirdPersonMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, bIsValidLevelInstance=0, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.12.06-16.28.30:881][923]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.12.06-16.28.30:881][923]LogWorldPartition: UWorldPartition::Initialize(Asset=ThirdPersonMap, IsEditor=0, bPIEWorldTravel=1 IsGame=0, IsCooking=0)
+[2024.12.06-16.28.30:909][923]LogWorldPartition: Display: GenerateStreaming started...
+[2024.12.06-16.28.30:909][923]LogWorldPartition: Display: GetPartitionedActors started...
+[2024.12.06-16.28.30:909][923]LogWorldPartition: Display: GetPartitionedActors took 10 us (total: 144 us)
+[2024.12.06-16.28.31:112][923]LogWorldPartition: Display: GenerateStreaming took 202 ms (total: 7.33 sec)
+[2024.12.06-16.28.31:130][923]LogContentBundle: [ThirdPersonMap(Standalone)] Creating new contrainer.
+[2024.12.06-16.28.31:131][923]LogWorldPartition: Display: WorldPartition initialize took 249 ms (total: 7.88 sec)
+[2024.12.06-16.28.31:131][923]LogPlayLevel: PIE: World Init took: (0.250504s)
+[2024.12.06-16.28.31:131][923]LogLoad: Game class is 'MyGameMode_C'
+[2024.12.06-16.28.31:219][923]LogAIPerception: Warning: UAIPerceptionComponent::OnRegister: Perception Component is being registered with SumonedMouse_C_UAID_2CF05D21F81C332F02_1463177104, they are designed to work with AAIControllers!
+[2024.12.06-16.28.31:258][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:258][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:262][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:265][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:266][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:268][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:269][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:272][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:272][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:274][923]LogSkeletalMesh: Error: Material with missing usage flag was applied to skeletal mesh /Game/Cats/Assets/PNJ/OldMan_Skeletton.OldMan_Skeletton
+[2024.12.06-16.28.31:318][923]LogAIPerception: Warning: UAIPerceptionComponent::OnRegister: Perception Component is being registered with SumonedMouse_C_UAID_2CF05D21F81C332F02_1463177104, they are designed to work with AAIControllers!
+[2024.12.06-16.28.31:334][923]PIE: Warning: AttachTo: '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_40B076A427A1BC1302_1710030674.Spline' is not static  (in blueprint "MouseArea"), cannot attach '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_40B076A427A1BC1302_1710030674.SplineMesh' which is static to it. Aborting.
+[2024.12.06-16.28.31:341][923]PIE: Warning: AttachTo: '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_2CF05D21F81C801202_2069105051.Spline' is not static  (in blueprint "MouseArea"), cannot attach '/Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap:PersistentLevel.MouseArea_C_UAID_2CF05D21F81C801202_2069105051.SplineMesh' which is static to it. Aborting.
+[2024.12.06-16.28.31:356][923]LogWorld: Bringing World /Game/Cats/Map/UEDPIE_0_ThirdPersonMap.ThirdPersonMap up for play (max tick rate 0) at 2024.12.06-17.28.31
+[2024.12.06-16.28.31:365][923]LogWorld: Bringing up level for play took: 0.226321
+[2024.12.06-16.28.31:365][923]LogNavigation: Warning: Recreating dtNavMesh instance due mismatch in number of bytes required to store serialized maxTiles (200, 8 bits) vs calculated maxtiles (808, 10 bits)
+[2024.12.06-16.28.31:427][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:427][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:427][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:428][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:428][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:428][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:431][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:431][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:431][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:431][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:432][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:432][923]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2024.12.06-16.28.31:441][923]LogLoad: Took 0.650361 seconds to LoadMap(/Game/Cats/Map/ThirdPersonMap)
+[2024.12.06-16.28.31:599][923]LogScript: Warning: Script Msg: Cannot add duplicate item into ListView.
+[2024.12.06-16.28.31:599][923]LogScript: Warning: Script Msg called by: InGameUI_C /Engine/Transient.UnrealEdEngine_0:GameInstance_7.InGameUI_C_0
+[2024.12.06-16.28.32:667][986]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.32:893][  0]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.33:868][ 63]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:046][ 75]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:063][ 76]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:082][ 77]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:100][ 78]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:119][ 79]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:134][ 80]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:153][ 81]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:168][ 82]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:186][ 83]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:202][ 84]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:222][ 85]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:238][ 86]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:255][ 87]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:271][ 88]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:288][ 89]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:303][ 90]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:321][ 91]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:338][ 92]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:355][ 93]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:371][ 94]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:389][ 95]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:405][ 96]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:423][ 97]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:439][ 98]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:456][ 99]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:472][100]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:491][101]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:507][102]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:525][103]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:541][104]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:558][105]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:575][106]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:592][107]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:608][108]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:625][109]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:641][110]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:657][111]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:673][112]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:690][113]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:705][114]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:722][115]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:738][116]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:754][117]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:769][118]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:786][119]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:802][120]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:818][121]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:834][122]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:849][123]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:865][124]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:881][125]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:896][126]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:912][127]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:928][128]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:944][129]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:960][130]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:976][131]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.34:991][132]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:008][133]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:022][134]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:038][135]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:052][136]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:067][137]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:082][138]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:097][139]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:111][140]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:126][141]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:142][142]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:159][143]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:173][144]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:189][145]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:203][146]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:217][147]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:232][148]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:248][149]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:262][150]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:277][151]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:306][153]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.35:321][154]LogChaos: Warning: Collision handler encountered invalid actors and could not recover components
+[2024.12.06-16.28.46:561][ 55]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.06-16.28.46:561][ 55]LogWorld: BeginTearingDown for /Game/Cats/Map/UEDPIE_0_ThirdPersonMap
+[2024.12.06-16.28.46:563][ 55]LogWorld: UWorld::CleanupWorld for ThirdPersonMap, bSessionEnded=true, bCleanupResources=true
+[2024.12.06-16.28.46:573][ 55]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.28.46:574][ 55]LogContentBundle: [ThirdPersonMap(Standalone)] Deleting container.
+[2024.12.06-16.28.46:577][ 55]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.12.06-16.28.46:584][ 55]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.12.06-16.28.46:607][ 55]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.12.06-16.28.46:611][ 55]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.12.06-16.28.46:611][ 55]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.12.06-16.28.46:613][ 55]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.12.06-16.28.46:673][ 55]LogUObjectHash: Compacting FUObjectHashTables data took   3.69ms
+[2024.12.06-16.28.46:764][ 56]LogPlayLevel: Display: Destroying online subsystem :Context_37
+[2024.12.06-16.28.55:555][ 61]BlueprintLog: New page: Compile MyGameMode
+[2024.12.06-16.28.55:604][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2024.12.06-16.28.55:617][ 61]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.06-16.28.55:685][ 61]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/GameMode/MyGameMode" FILE="D:/Documents/Unreal Projects/ProjectCats/Content/Cats/GameMode/MyGameMode.uasset" SILENT=true
+[2024.12.06-16.28.55:711][ 61]LogSavePackage: Moving output files for package: /Game/Cats/GameMode/MyGameMode
+[2024.12.06-16.28.55:712][ 61]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/MyGameModeD26D78F04E2D5439E475EA88E5E7C194.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Content/Cats/GameMode/MyGameMode.uasset'
+[2024.12.06-16.28.55:722][ 61]LogFileHelpers: InternalPromptForCheckoutAndSave took 105 ms (total: 2.63 sec)
+[2024.12.06-16.28.55:728][ 61]AssetCheck: New page: Asset Save: MyGameMode
+[2024.12.06-16.28.55:728][ 61]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Cats/GameMode/MyGameMode.MyGameMode
+[2024.12.06-16.28.56:612][157]LogWorld: UWorld::CleanupWorld for World_48, bSessionEnded=true, bCleanupResources=true
+[2024.12.06-16.28.56:612][157]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
