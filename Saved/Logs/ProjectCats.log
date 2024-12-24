@@ -4045,3 +4045,30 @@ Are you sure?
 [2024.12.24-15.58.51:345][533]LogContentValidation: Display: Validating /Game/Cats/Blueprint/BreakableProps/Box.Box_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.Box_C_UAID_2CF05D21F81C093B02_1579268389
 [2024.12.24-15.58.51:345][533]LogContentValidation: Display: Validating /Game/Cats/Blueprint/BreakableProps/Box.Box_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.Box_C_UAID_2CF05D21F81C5A3B02_1959858639
 [2024.12.24-15.58.51:345][533]LogContentValidation: Display: Validating /Game/Cats/Blueprint/BreakableProps/Box.Box_C /Game/Cats/Map/ThirdPersonMap.ThirdPersonMap:PersistentLevel.Box_C_UAID_2CF05D21F81C093B02_1532220387
+[2024.12.24-16.03.02:553][993]LogWindowsTextInputMethodSystem: Activated input method: Français (France) - (Keyboard).
+[2024.12.24-16.03.02:553][993]LogWindowsTextInputMethodSystem: Activated input method: Français (France) - (Keyboard).
+[2024.12.24-16.03.11:616][ 24]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:625][ 24]LogAIPerception: Warning: UAIPerceptionComponent::OnRegister: Perception Component is being registered with SumonedMouse_C_0, they are designed to work with AAIControllers!
+[2024.12.24-16.03.11:652][ 25]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:661][ 25]LogScript: Warning: Accessed None trying to read property MovementComponent
+	StrayCat_ABP_C /Engine/Transient.World_15:PersistentLevel.SkeletalMeshActor_0.SkeletalMeshComponent0.StrayCat_ABP_C_0
+	Function /Game/Cats/Blueprint/StrayCat_ABP.StrayCat_ABP_C:ExecuteUbergraph_StrayCat_ABP:002F
+[2024.12.24-16.03.11:671][ 26]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:696][ 27]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:718][ 28]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:743][ 29]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:771][ 30]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.11:795][ 31]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.03.30:854][ 46]LogAssetEditorSubsystem: Opening Asset editor for DataTable /Game/Cats/Widget/PowerUp/DT_PowerUp.DT_PowerUp
+[2024.12.24-16.05.28:036][975]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.05.36:120][865]LogEditorClassViewer: Warning: Class /Game/Cats/Blueprint/BreakableProps/Bottle.Bottle_C has parent /Game/Cats/Blueprint/BaseProps.BaseProps_C, but this parent is not found. The Class will not be shown in ClassViewer.
+[2024.12.24-16.12.28:867][906]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-16.12.28:923][906]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/PowerUp/DT_PowerUp" FILE="D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/PowerUp/DT_PowerUp.uasset" SILENT=true
+[2024.12.24-16.12.28:925][906]LogSavePackage: Moving output files for package: /Game/Cats/Widget/PowerUp/DT_PowerUp
+[2024.12.24-16.12.28:925][906]LogSavePackage: Moving 'D:/Documents/Unreal Projects/ProjectCats/Saved/DT_PowerUpADE9590B4942E05845D9A6B0E20396D4.tmp' to 'D:/Documents/Unreal Projects/ProjectCats/Content/Cats/Widget/PowerUp/DT_PowerUp.uasset'
+[2024.12.24-16.12.28:935][906]LogFileHelpers: InternalPromptForCheckoutAndSave took 67 ms (total: 7.44 sec)
+[2024.12.24-16.12.28:942][906]AssetCheck: New page: Asset Save: DT_PowerUp
+[2024.12.24-16.12.28:943][906]LogContentValidation: Display: Validating /Script/Engine.DataTable /Game/Cats/Widget/PowerUp/DT_PowerUp.DT_PowerUp
+[2024.12.24-16.12.57:137][ 58]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Cats/Blueprint/Component/C_ACT_ProjectileBonus.C_ACT_ProjectileBonus
+[2024.12.24-16.12.57:137][ 58]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.12.24-16.12.57:138][ 58]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
