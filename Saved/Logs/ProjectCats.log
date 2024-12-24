@@ -7939,3 +7939,69 @@ Script Stack (0 frames) :
 [2024.12.24-13.46.07:743][796]LogFileHelpers: InternalPromptForCheckoutAndSave took 48 ms (total: 8.31 sec)
 [2024.12.24-13.46.07:754][796]AssetCheck: New page: Asset Save: RunEndMenu
 [2024.12.24-13.46.07:754][796]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/RunEndMenu.RunEndMenu
+[2024.12.24-13.48.55:555][811]BlueprintLog: New page: Compile RunEndMenu
+[2024.12.24-13.48.55:616][811]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2024.12.24-13.48.55:625][811]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.48.55:658][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/RunEndMenu" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/RunEndMenu.uasset" SILENT=true
+[2024.12.24-13.48.55:670][811]LogSavePackage: Moving output files for package: /Game/Cats/Widget/RunEndMenu
+[2024.12.24-13.48.55:670][811]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/RunEndMenuBA87667048B3A1D0462B36905A0FF787.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/RunEndMenu.uasset'
+[2024.12.24-13.48.55:677][811]LogFileHelpers: InternalPromptForCheckoutAndSave took 52 ms (total: 8.36 sec)
+[2024.12.24-13.48.55:690][811]AssetCheck: New page: Asset Save: RunEndMenu
+[2024.12.24-13.48.55:690][811]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/RunEndMenu.RunEndMenu
+[2024.12.24-13.49.14:373][624]BlueprintLog: New page: Compile SoundMenu
+[2024.12.24-13.49.14:430][624]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2024.12.24-13.49.14:445][624]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.49.14:479][624]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/SoundMenu" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/SoundMenu.uasset" SILENT=true
+[2024.12.24-13.49.14:496][624]LogSavePackage: Moving output files for package: /Game/Cats/Widget/SoundMenu
+[2024.12.24-13.49.14:496][624]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/SoundMenu7F1D632F41C3A98435215EA86B9A492C.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/SoundMenu.uasset'
+[2024.12.24-13.49.14:503][624]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 8.42 sec)
+[2024.12.24-13.49.14:508][624]AssetCheck: New page: Asset Save: SoundMenu
+[2024.12.24-13.49.14:508][624]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/SoundMenu.SoundMenu
+[2024.12.24-13.49.15:014][626]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.49.15:042][626]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/SoundMenu" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/SoundMenu.uasset" SILENT=true
+[2024.12.24-13.49.15:059][626]LogSavePackage: Moving output files for package: /Game/Cats/Widget/SoundMenu
+[2024.12.24-13.49.15:059][626]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/SoundMenu3D19714E46F51FC6B7C25FA2CCC7866E.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/SoundMenu.uasset'
+[2024.12.24-13.49.15:066][626]LogFileHelpers: InternalPromptForCheckoutAndSave took 52 ms (total: 8.47 sec)
+[2024.12.24-13.49.15:072][626]AssetCheck: New page: Asset Save: SoundMenu
+[2024.12.24-13.49.15:072][626]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/SoundMenu.SoundMenu
+[2024.12.24-13.49.25:371][138]BlueprintLog: New page: Compile WGT_PowerUP
+[2024.12.24-13.49.25:435][138]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2024.12.24-13.49.25:480][138]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.49.25:515][138]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/WGT_PowerUP" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_PowerUP.uasset" SILENT=true
+[2024.12.24-13.49.25:537][138]LogSavePackage: Moving output files for package: /Game/Cats/Widget/WGT_PowerUP
+[2024.12.24-13.49.25:537][138]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/WGT_PowerUP89E5D82440DFA0AD91D6668E2872C890.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_PowerUP.uasset'
+[2024.12.24-13.49.25:545][138]LogFileHelpers: InternalPromptForCheckoutAndSave took 64 ms (total: 8.54 sec)
+[2024.12.24-13.49.25:576][138]AssetCheck: New page: Asset Save: WGT_PowerUP
+[2024.12.24-13.49.25:576][138]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/WGT_PowerUP.WGT_PowerUP
+[2024.12.24-13.49.26:802][172]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.49.26:837][172]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/WGT_PowerUP" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_PowerUP.uasset" SILENT=true
+[2024.12.24-13.49.26:858][172]LogSavePackage: Moving output files for package: /Game/Cats/Widget/WGT_PowerUP
+[2024.12.24-13.49.26:858][172]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/WGT_PowerUP0EFBA0644B3728FC89B62AA7065A743D.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_PowerUP.uasset'
+[2024.12.24-13.49.26:865][172]LogFileHelpers: InternalPromptForCheckoutAndSave took 62 ms (total: 8.60 sec)
+[2024.12.24-13.49.26:870][172]AssetCheck: New page: Asset Save: WGT_PowerUP
+[2024.12.24-13.49.26:870][172]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/WGT_PowerUP.WGT_PowerUP
+[2024.12.24-13.49.50:682][353]BlueprintLog: New page: Compile WGT_CardPwrUp
+[2024.12.24-13.49.50:768][353]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2024.12.24-13.49.50:853][353]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.49.50:886][353]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/WGT_CardPwrUp" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_CardPwrUp.uasset" SILENT=true
+[2024.12.24-13.49.50:899][353]LogSavePackage: Moving output files for package: /Game/Cats/Widget/WGT_CardPwrUp
+[2024.12.24-13.49.50:900][353]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/WGT_CardPwrUpB5DE6D1E40F368C6D9297990A00CBAB3.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/WGT_CardPwrUp.uasset'
+[2024.12.24-13.49.50:907][353]LogFileHelpers: InternalPromptForCheckoutAndSave took 53 ms (total: 8.65 sec)
+[2024.12.24-13.49.50:918][353]AssetCheck: New page: Asset Save: WGT_CardPwrUp
+[2024.12.24-13.49.50:918][353]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/WGT_CardPwrUp.WGT_CardPwrUp
+[2024.12.24-13.50.10:649][154]BlueprintLog: New page: Compile GameEndMenu
+[2024.12.24-13.50.10:707][154]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2024.12.24-13.50.10:719][154]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.50.10:756][154]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/GameEndMenu" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/GameEndMenu.uasset" SILENT=true
+[2024.12.24-13.50.10:770][154]LogSavePackage: Moving output files for package: /Game/Cats/Widget/GameEndMenu
+[2024.12.24-13.50.10:770][154]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/GameEndMenu64FD03B24F747C0FC5A35ABB37C35E20.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/GameEndMenu.uasset'
+[2024.12.24-13.50.10:778][154]LogFileHelpers: InternalPromptForCheckoutAndSave took 59 ms (total: 8.71 sec)
+[2024.12.24-13.50.10:789][154]AssetCheck: New page: Asset Save: GameEndMenu
+[2024.12.24-13.50.10:789][154]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/GameEndMenu.GameEndMenu
+[2024.12.24-13.50.12:308][212]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.12.24-13.50.12:334][212]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Cats/Widget/GameEndMenu" FILE="D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/GameEndMenu.uasset" SILENT=true
+[2024.12.24-13.50.12:347][212]LogSavePackage: Moving output files for package: /Game/Cats/Widget/GameEndMenu
+[2024.12.24-13.50.12:348][212]LogSavePackage: Moving 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Saved/GameEndMenuAEE48CCE448CED614E8A73B5297ADEED.tmp' to 'D:/JakStudio/JAKJAM/GIT/ProjectCats/ProjectCats/Content/Cats/Widget/GameEndMenu.uasset'
+[2024.12.24-13.50.12:354][212]LogFileHelpers: InternalPromptForCheckoutAndSave took 46 ms (total: 8.76 sec)
+[2024.12.24-13.50.12:366][212]AssetCheck: New page: Asset Save: GameEndMenu
+[2024.12.24-13.50.12:366][212]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Cats/Widget/GameEndMenu.GameEndMenu
