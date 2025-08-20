@@ -1,0 +1,3187 @@
+[2025-08-19 23:37:10Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Credentials': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Runner': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.runner'
+[2025-08-19 23:37:10Z INFO Worker] Version: 2.328.0
+[2025-08-19 23:37:10Z INFO Worker] Commit: 6f9a9110adce65f44ca6f7c0ae142b9cc6af937b
+[2025-08-19 23:37:10Z INFO Worker] Culture: fr-FR
+[2025-08-19 23:37:10Z INFO Worker] UI Culture: fr-FR
+[2025-08-19 23:37:10Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-08-19 23:37:10Z INFO ProcessChannel] Receiving message of length 19835, with hash '0df7d314966d49575c05fb1bcfdf61834e73e3aaca8490c1d798535bc55f3a5b'
+[2025-08-19 23:37:10Z INFO Worker] Message received.
+[2025-08-19 23:37:10Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/blank.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 13,
+        "col": 15,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "56a7f86d-cd42-4a4a-9128-acabdb73b552",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 15,
+        "lit": "Package Project"
+      },
+      "contextName": "__run",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 18,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 11,
+              "lit": "UE_PATH"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 20,
+              "lit": "C:\\UE_5.2"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 19,
+              "col": 11,
+              "lit": "PROJECT_PATH"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 19,
+              "col": 25,
+              "lit": "D:\\Documents\\Unreal Projects\\ProjectCats\\ProjectCats.uproject"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 11,
+              "lit": "OUTPUT_PATH"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 24,
+              "lit": "D:\\Documents\\PackagedFiles"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 14,
+              "lit": "# Try to run empty UAT to check for correct path\n& $env:UE_PATH\\Engine\\Build\\BatchFiles\\RunUAT.bat BuildCookRun -project=\"$env:PROJECT_PATH\" -noP4 -platform=Win64 -clientconfig=Development -serverconfig=Development -cook -allmaps -build -stage -pak -archive -archivedirectory=\"$env:OUTPUT_PATH\"\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "10cd4e1f-e3e6-4ce8-947c-729aefcf6751",
+      "name": "__run"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "733b7153-9556-43a9-a3cc-2ad8ba23ddb5.build.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "Package Unreal Engine Game"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "733b7153-9556-43a9-a3cc-2ad8ba23ddb5",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "733b7153-9556-43a9-a3cc-2ad8ba23ddb5",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "3990881c-6277-54a3-bf6d-cde11dbc659b",
+  "jobDisplayName": "Package Unreal Engine Game",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/1HJgvuW43qApg6MYD7Q7yZoeflheQeLKO5vXO12I9INQMeiZDR/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/1HJgvuW43qApg6MYD7Q7yZoeflheQeLKO5vXO12I9INQMeiZDR/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/56/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "ce7b19e27d495450fb69e50eee17b685267ce68d"
+        },
+        {
+          "k": "repository",
+          "v": "clementmonello/ProjectCats"
+        },
+        {
+          "k": "repository_owner",
+          "v": "clementmonello"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "77678423"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/clementmonello/ProjectCats.git"
+        },
+        {
+          "k": "run_id",
+          "v": "17084023728"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "private"
+        },
+        {
+          "k": "actor_id",
+          "v": "77678423"
+        },
+        {
+          "k": "actor",
+          "v": "clementmonello"
+        },
+        {
+          "k": "workflow",
+          "v": "Package Unreal Engine Project"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "ce7b19e27d495450fb69e50eee17b685267ce68d"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "1e945d4eeca45e42ef84e0a689b112bc12394d52"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "77678423+clementmonello@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "clementmonello"
+                              },
+                              {
+                                "k": "username",
+                                "v": "clementmonello"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "ce7b19e27d495450fb69e50eee17b685267ce68d"
+                        },
+                        {
+                          "k": "message",
+                          "v": "BuildGame.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-08-20T01:14:59+02:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "adb36d870ff5a1577ef3b06aec901cf124184758"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/clementmonello/ProjectCats/commit/ce7b19e27d495450fb69e50eee17b685267ce68d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/clementmonello/ProjectCats/compare/1e945d4eeca4...ce7b19e27d49"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "77678423+clementmonello@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "clementmonello"
+                          },
+                          {
+                            "k": "username",
+                            "v": "clementmonello"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "ce7b19e27d495450fb69e50eee17b685267ce68d"
+                    },
+                    {
+                      "k": "message",
+                      "v": "BuildGame.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-08-20T01:14:59+02:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "adb36d870ff5a1577ef3b06aec901cf124184758"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/clementmonello/ProjectCats/commit/ce7b19e27d495450fb69e50eee17b685267ce68d"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "77678423+clementmonello@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "clementmonello"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/clementmonello/ProjectCats.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1723408565.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "clementmonello/ProjectCats"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/clementmonello/ProjectCats.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": false
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/clementmonello/ProjectCats"
+                    },
+                    {
+                      "k": "id",
+                      "v": 841164589.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": null
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "ProjectCats"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOMiMnLQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/77678423?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "77678423+clementmonello@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/clementmonello/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/clementmonello/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/clementmonello/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/clementmonello/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/clementmonello"
+                          },
+                          {
+                            "k": "id",
+                            "v": 77678423.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "clementmonello"
+                          },
+                          {
+                            "k": "name",
+                            "v": "clementmonello"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjc3Njc4NDIz"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/clementmonello/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/clementmonello/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/clementmonello/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/clementmonello/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/clementmonello/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/clementmonello"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": true
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1755643778.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 831460.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:clementmonello/ProjectCats.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/clementmonello/ProjectCats"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-08-19T22:49:49Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/clementmonello/ProjectCats"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "private"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/77678423?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/clementmonello/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/clementmonello/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/clementmonello/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/clementmonello/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/clementmonello"
+                    },
+                    {
+                      "k": "id",
+                      "v": 77678423.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "clementmonello"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjc3Njc4NDIz"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/clementmonello/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/clementmonello/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/clementmonello/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/clementmonello/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/clementmonello/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/clementmonello"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "clementmonello/ProjectCats/.github/workflows/blank.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "ce7b19e27d495450fb69e50eee17b685267ce68d"
+        },
+        {
+          "k": "repository_id",
+          "v": "841164589"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "clementmonello"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOBKFHVw"
+}
+[2025-08-19 23:37:10Z INFO JobRunner] Job ID 3990881c-6277-54a3-bf6d-cde11dbc659b
+[2025-08-19 23:37:10Z INFO ConfigurationStore] currentAssemblyLocation: D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin\Runner.Worker.dll
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] binPath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] RootFolder: D:\Documents\Unreal Projects\ProjectCats\actions-runner
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Runner': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.runner'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] ConfigFilePath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\.runner
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.runner_migrated'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] MigratedConfigFilePath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\.runner_migrated
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Credentials': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] CredFilePath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials_migrated'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] MigratedCredFilePath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials_migrated
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Service': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.service'
+[2025-08-19 23:37:10Z INFO ConfigurationStore] ServiceConfigFilePath: D:\Documents\Unreal Projects\ProjectCats\actions-runner\.service
+[2025-08-19 23:37:10Z INFO ConfigurationStore] Read setting file: 394 chars
+[2025-08-19 23:37:10Z INFO JobRunner] Initializing launch client
+[2025-08-19 23:37:10Z INFO JobServerQueue] Initializing results client
+[2025-08-19 23:37:10Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-08-19 23:37:10Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-08-19 23:37:10Z INFO JobServerQueue] Start process web console line queue.
+[2025-08-19 23:37:10Z INFO JobServerQueue] Start process file upload queue.
+[2025-08-19 23:37:10Z INFO JobServerQueue] Start results file upload queue.
+[2025-08-19 23:37:10Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-08-19 23:37:10Z INFO JobServerQueue] Start process timeline update queue.
+[2025-08-19 23:37:10Z INFO ExecutionContext] Initializing Job context
+[2025-08-19 23:37:10Z INFO ExecutionContext] Initialize GitHub context
+[2025-08-19 23:37:10Z INFO ExecutionContext] Initialize Env context
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:10Z INFO JobRunner] Starting the job execution context.
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO JobRunner] Validating directory permissions for: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Tools': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_tool'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:37:10Z INFO JobRunner] Getting job extension.
+[2025-08-19 23:37:10Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'Credentials': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.credentials'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known config file 'SetupInfo': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\.setup_info'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_PipelineMapping\clementmonello/ProjectCats\PipelineFolder.json
+[2025-08-19 23:37:10Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO JobExtension] Downloading actions
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:10Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:10Z INFO Worker] Listening for cancel message from the channel.
+[2025-08-19 23:37:10Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-08-19 23:37:11Z INFO ResultServer] Successfully started websocket client.
+[2025-08-19 23:37:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a9242784-447f-42c2-829d-88b3a34a04f8', success rate: 1/1.
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:11Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:11Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\_temp_7a8b56f3-e46b-4b4f-a0f0-460da3b8a330\858e882c-a59b-4c00-b925-0e6a941a29c3.zip.
+[2025-08-19 23:37:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a9242784-447f-42c2-829d-88b3a34a04f8', success rate: 1/1.
+[2025-08-19 23:37:11Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-08-19 23:37:12Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: D58C:D811:8651B:BCED3:68A50AA8 Http Status: OK
+[2025-08-19 23:37:12Z INFO ActionManager] Finished getting action repository.
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-08-19 23:37:12Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManager] Load action that reference repository from 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-08-19 23:37:12Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-08-19 23:37:12Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-08-19 23:37:12Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-08-19 23:37:12Z INFO JobExtension] Adding .
+[2025-08-19 23:37:12Z INFO JobExtension] Adding .
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO JobExtension] Total accessible running process: 249.
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO JobExtension] Start checking service connectivity in background.
+[2025-08-19 23:37:12Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "a9242784-447f-42c2-829d-88b3a34a04f8",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-08-19T23:37:10.846072Z",
+  "finishTime": "2025-08-19T23:37:12.2859263Z"
+}.
+[2025-08-19 23:37:12Z INFO JobRunner] Total job steps: 2.
+[2025-08-19 23:37:12Z INFO JobRunner] Run all job steps.
+[2025-08-19 23:37:12Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-08-19 23:37:12Z INFO StepsRunner] Evaluating: success()
+[2025-08-19 23:37:12Z INFO StepsRunner] Result: true
+[2025-08-19 23:37:12Z INFO StepsRunner] Starting the step.
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO StepsRunner] Which2: 'chcp'
+[2025-08-19 23:37:12Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] Process started with process id 3900, waiting for process exit.
+[2025-08-19 23:37:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a9242784-447f-42c2-829d-88b3a34a04f8', success rate: 1/1.
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] Finished process 3900 with exit code 0, and elapsed time 00:00:00.0202731.
+[2025-08-19 23:37:12Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManager] Load action that reference repository from 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-08-19 23:37:12Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-08-19 23:37:12Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-08-19 23:37:12Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-08-19 23:37:12Z INFO ExecutionContext] Reserve record order 4 to 6 for post job actions.
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:37:12Z INFO ExecutionContext] Write event payload to D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:37:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "clementmonello/ProjectCats"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:37:12Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-08-19 23:37:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command error
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command group
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-08-19 23:37:12Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:12Z INFO HostContext] Well known directory 'Externals': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\externals'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   File name: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\externals\node20\bin\node.exe'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Arguments: '"D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\ProjectCats\ProjectCats'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:37:12Z INFO ProcessInvokerWrapper] Process started with process id 15320, waiting for process exit.
+[2025-08-19 23:37:12Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-08-19 23:37:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:12Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-08-19 23:37:12Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_a9242784-447f-42c2-829d-88b3a34a04f8.1
+[2025-08-19 23:37:12Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-08-19 23:37:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:13Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-08-19 23:37:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:22Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:22Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:22Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:32Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:32Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:32Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:42Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:42Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:42Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:42Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:44Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:47Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:48Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:52Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:37:52Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:37:52Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:37:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:55Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:56Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:57Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:58Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:37:59Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:01Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:02Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:02Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:02Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:02Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:05Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:08Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:12Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:12Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:12Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:13Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2025-08-19 23:38:14Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:22Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:22Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:22Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:29Z INFO JobServerQueue] Try to append 2 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 2/2.
+[2025-08-19 23:38:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:32Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:32Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:32Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:36Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Finished process 15320 with exit code 0, and elapsed time 00:01:24.1845297.
+[2025-08-19 23:38:36Z INFO CreateStepSummaryCommand] Step Summary file (D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_runner_file_commands\step_summary_1966e197-6c03-46e6-93e7-4723780625ed) is empty; skipping attachment upload
+[2025-08-19 23:38:36Z INFO StepsRunner] Step result: 
+[2025-08-19 23:38:36Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "56a7f86d-cd42-4a4a-9128-acabdb73b552",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 85,
+  "startTime": "2025-08-19T23:37:12.2939228Z",
+  "finishTime": "2025-08-19T23:38:36.5515942Z"
+}.
+[2025-08-19 23:38:36Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-08-19 23:38:36Z INFO StepsRunner] Current state: job state = ''
+[2025-08-19 23:38:36Z INFO StepsRunner] Processing step: DisplayName='Package Project'
+[2025-08-19 23:38:36Z INFO StepsRunner] Evaluating: success()
+[2025-08-19 23:38:36Z INFO StepsRunner] Result: true
+[2025-08-19 23:38:36Z INFO StepsRunner] Starting the step.
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO StepsRunner] Which2: 'chcp'
+[2025-08-19 23:38:36Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Process started with process id 20684, waiting for process exit.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Finished process 20684 with exit code 0, and elapsed time 00:00:00.0071886.
+[2025-08-19 23:38:36Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:38:36Z INFO ExecutionContext] Write event payload to D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:38:36Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-08-19 23:38:36Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command error
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command group
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-08-19 23:38:36Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-08-19 23:38:36Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-08-19 23:38:36Z INFO ScriptHandler] Defaulting to powershell
+[2025-08-19 23:38:36Z INFO ScriptHandler] Which2: 'powershell'
+[2025-08-19 23:38:36Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:38:36Z INFO ScriptHandler] Which2: 'pwsh'
+[2025-08-19 23:38:36Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2025-08-19 23:38:36Z INFO ScriptHandler] Defaulting to powershell
+[2025-08-19 23:38:36Z INFO ScriptHandler] Which2: 'powershell'
+[2025-08-19 23:38:36Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\fe12825c-6935-46b4-839d-957aa97faf7a.ps1'"'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\ProjectCats\ProjectCats'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Process started with process id 20320, waiting for process exit.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Finished process 20320 with exit code 1, and elapsed time 00:00:00.3284187.
+[2025-08-19 23:38:36Z INFO CreateStepSummaryCommand] Step Summary file (D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_runner_file_commands\step_summary_a7fa3dfb-cc8c-4329-94c9-cec81931a731) is empty; skipping attachment upload
+[2025-08-19 23:38:36Z INFO StepsRunner] Step result: Failed
+[2025-08-19 23:38:36Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "10cd4e1f-e3e6-4ce8-947c-729aefcf6751",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-08-19T23:38:36.5523228Z",
+  "finishTime": "2025-08-19T23:38:36.9200732Z"
+}.
+[2025-08-19 23:38:36Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-08-19 23:38:36Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-08-19 23:38:36Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-08-19 23:38:36Z INFO StepsRunner] Evaluating: always()
+[2025-08-19 23:38:36Z INFO StepsRunner] Result: true
+[2025-08-19 23:38:36Z INFO StepsRunner] Starting the step.
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO StepsRunner] Which2: 'chcp'
+[2025-08-19 23:38:36Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Process started with process id 12556, waiting for process exit.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Finished process 12556 with exit code 0, and elapsed time 00:00:00.0073580.
+[2025-08-19 23:38:36Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:38:36Z INFO ActionManager] Load action that reference repository from 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Actions': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions'
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-08-19 23:38:36Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-08-19 23:38:36Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-08-19 23:38:36Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:38:36Z INFO ExecutionContext] Write event payload to D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Work': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Temp': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp'
+[2025-08-19 23:38:36Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "clementmonello/ProjectCats"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-08-19 23:38:36Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-08-19 23:38:36Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command error
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command group
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-08-19 23:38:36Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:36Z INFO HostContext] Well known directory 'Externals': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\externals'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Starting process:
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   File name: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\externals\node20\bin\node.exe'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Arguments: '"D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\ProjectCats\ProjectCats'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-08-19 23:38:36Z INFO ProcessInvokerWrapper] Process started with process id 444, waiting for process exit.
+[2025-08-19 23:38:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '56a7f86d-cd42-4a4a-9128-acabdb73b552', success rate: 1/1.
+[2025-08-19 23:38:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '10cd4e1f-e3e6-4ce8-947c-729aefcf6751', success rate: 1/1.
+[2025-08-19 23:38:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fc74267f-917b-4abd-b16f-060e3677cd1a', success rate: 1/1.
+[2025-08-19 23:38:37Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-08-19 23:38:37Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-08-19 23:38:37Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_56a7f86d-cd42-4a4a-9128-acabdb73b552.1
+[2025-08-19 23:38:37Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-08-19 23:38:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fc74267f-917b-4abd-b16f-060e3677cd1a', success rate: 1/1.
+[2025-08-19 23:38:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'fc74267f-917b-4abd-b16f-060e3677cd1a', success rate: 1/1.
+[2025-08-19 23:38:38Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-08-19 23:38:38Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_10cd4e1f-e3e6-4ce8-947c-729aefcf6751.1
+[2025-08-19 23:38:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-08-19 23:38:38Z INFO ProcessInvokerWrapper] Finished process 444 with exit code 0, and elapsed time 00:00:01.4036755.
+[2025-08-19 23:38:38Z INFO CreateStepSummaryCommand] Step Summary file (D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp\_runner_file_commands\step_summary_62f9d64d-4606-41bb-b169-57cba07e1d3b) is empty; skipping attachment upload
+[2025-08-19 23:38:38Z INFO StepsRunner] Step result: 
+[2025-08-19 23:38:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "fc74267f-917b-4abd-b16f-060e3677cd1a",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2025-08-19T23:38:36.9216053Z",
+  "finishTime": "2025-08-19T23:38:38.35145Z"
+}.
+[2025-08-19 23:38:38Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-08-19 23:38:38Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-08-19 23:38:38Z INFO JobRunner] Finalize job.
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:38Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:38:38Z INFO JobExtension] Initialize Env context
+[2025-08-19 23:38:38Z INFO JobExtension] Initialize steps context
+[2025-08-19 23:38:38Z INFO JobExtension] Total accessible running process: 246.
+[2025-08-19 23:38:38Z INFO JobExtension] Inspecting process environment variables. PID: 1856 (svchost)
+[2025-08-19 23:38:38Z WARN JobExtension] Ignore exception during read process environment variables: Accès refusé.
+[2025-08-19 23:38:38Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "62df566f-6b32-4bfd-8d12-c7c68d741f56",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-08-19T23:38:38.3550324Z",
+  "finishTime": "2025-08-19T23:38:38.368935Z"
+}.
+[2025-08-19 23:38:38Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-08-19 23:38:38Z INFO JobRunner] Completing the job execution context.
+[2025-08-19 23:38:38Z INFO JobRunner] Shutting down the job server queue.
+[2025-08-19 23:38:38Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-08-19 23:38:38Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-08-19 23:38:39Z INFO JobServerQueue] All queue process task stopped.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '62df566f-6b32-4bfd-8d12-c7c68d741f56', success rate: 1/1.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Web console line queue drained.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-08-19 23:38:39Z INFO JobServerQueue] File upload queue drained.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-08-19 23:38:39Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_fc74267f-917b-4abd-b16f-060e3677cd1a.1
+[2025-08-19 23:38:39Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-08-19 23:38:39Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_62df566f-6b32-4bfd-8d12-c7c68d741f56.1
+[2025-08-19 23:38:40Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-08-19 23:38:40Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\blocks\733b7153-9556-43a9-a3cc-2ad8ba23ddb5_3990881c-6277-54a3-bf6d-cde11dbc659b.1
+[2025-08-19 23:38:40Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2025-08-19 23:38:40Z INFO JobServerQueue] Results upload queue drained.
+[2025-08-19 23:38:40Z INFO JobServerQueue] Timeline update queue drained.
+[2025-08-19 23:38:40Z INFO JobServerQueue] Disposing job server ...
+[2025-08-19 23:38:40Z INFO JobServerQueue] Disposing results server ...
+[2025-08-19 23:38:40Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-08-19 23:38:40Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\Documents\Unreal Projects\ProjectCats\actions-runner\_work\_temp
+[2025-08-19 23:38:40Z INFO HostContext] Well known directory 'Bin': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\bin'
+[2025-08-19 23:38:40Z INFO HostContext] Well known directory 'Root': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner'
+[2025-08-19 23:38:40Z INFO HostContext] Well known directory 'Diag': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag'
+[2025-08-19 23:38:40Z INFO HostContext] Well known config file 'Telemetry': 'D:\Documents\Unreal Projects\ProjectCats\actions-runner\_diag\.telemetry'
+[2025-08-19 23:38:40Z INFO JobRunner] Raising job completed against run service
+[2025-08-19 23:38:41Z INFO Worker] Job completed.

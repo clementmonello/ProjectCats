@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "clementmonello/ProjectCats",
+  "pipelineDirectory": "ProjectCats",
+  "workspaceDirectory": "ProjectCats\\ProjectCats",
+  "repositories": {
+    "clementmonello/ProjectCats": {
+      "repositoryPath": "ProjectCats\\ProjectCats",
+      "lastRunOn": "08/20/2025 01:37:10 +02:00"
+    }
+  },
+  "lastRunOn": "08/20/2025 02:05:03 +02:00"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DELL",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/1HJgvuW43qApg6MYD7Q7yZoeflheQeLKO5vXO12I9INQMeiZDR/",
+  "gitHubUrl": "https://github.com/clementmonello/ProjectCats",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
