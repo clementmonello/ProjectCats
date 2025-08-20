@@ -77,3 +77,29 @@ Saved/Config/WindowsEditor/Engine.ini
 Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
 Saved/AutoScreenshot.png
 /actions-runner/bin
+DerivedDataCache/
+Engine/DerivedDataCache/
+
+# GitHub Actions
+.github/*.log
+.github/*.tmp
+
+
+# Packaging / archives
+*.zip
+*.7z
+*.tar.gz
+
+# Crash reports
+*.dmp
+*.pid
+
+# User-specific settings
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Logs
+*.log
+*.tlog
